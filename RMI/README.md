@@ -1,10 +1,10 @@
-#Para compilar 
+# Para compilar 
 
 - Usando o comando **javac** compile todos os códigos 
 
 - Use o comando **rmic** gere o stub para o cliente: *rmic Server* 
 
-#Para executar
+# Para executar
 
 - Execute o servidor usando: *java Server* 
 
