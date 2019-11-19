@@ -28,6 +28,8 @@ Pedro Caminha (phcl)
 
 [Slide: Threads](https://docs.google.com/presentation/d/1YwnQt127eA4tNMoTyCIejQYJzqhzw5SfLzWc-zftzlo/edit?usp=sharing)
 
+[Slide: Java RMI](https://docs.google.com/presentation/d/1IB0Wu0r4Vrq-BRWqfUsDoUguW9XsI0zFKGqylrxIPCk/edit?usp=sharing)
+
 ## Primeiros passos
 
 ### Instalação de uma distribuição Linux
