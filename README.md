@@ -59,3 +59,6 @@ Durante as atividades de monitoria, utilizaremos ferramentas inclusas por padrã
 No Linux Mint, basta abrir a **Central de Programas**, procurar pelos programas e clicar para instalar.
 
 No Ubuntu, é possível baixar o Eclipse através do **Adicionar ou remover programas**. O Visual Studio Code pode ser baixado no [site oficial](https://code.visualstudio.com/) do projeto.
+
+## Código-fonte
+Neste repositório disponibilizamos os códigos-fonte apresentados nas aulas de monitoria, com comentários e breve explicação sobre os conceitos abordados. Esse código serve como material de estudo para os exercícios práticos que realizaremos ao longo da disciplina.

@@ -1,6 +1,3 @@
-## Código-fonte
-Neste repositório disponibilizamos os códigos-fonte apresentados nas aulas de monitoria, com comentários e breve explicação sobre os conceitos abordados. Esse código serve como material de estudo para os exercícios práticos que realizaremos ao longo da disciplina.
-
 ### Compilação e execução
 1. Abra o terminal
 
