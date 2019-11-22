@@ -59,19 +59,3 @@ Durante as atividades de monitoria, utilizaremos ferramentas inclusas por padrã
 No Linux Mint, basta abrir a **Central de Programas**, procurar pelos programas e clicar para instalar.
 
 No Ubuntu, é possível baixar o Eclipse através do **Adicionar ou remover programas**. O Visual Studio Code pode ser baixado no [site oficial](https://code.visualstudio.com/) do projeto.
-
-## Código-fonte
-Neste repositório disponibilizamos os códigos-fonte apresentados nas aulas de monitoria, com comentários e breve explicação sobre os conceitos abordados. Esse código serve como material de estudo para os exercícios práticos que realizaremos ao longo da disciplina.
-
-### Compilação e execução
-1. Abra o terminal
-
-2. Compile com o comando
-
-   `gcc -pthread nome_arquivo.c -o nome_saida`   
-
-3. Execute com o comando
-
-   `./nome_saida`   
-
-Para códigos-fonte na linguagem C++, basta substituir o `gcc` por `g++`.
