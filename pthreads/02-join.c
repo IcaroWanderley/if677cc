@@ -12,15 +12,20 @@ void *hello(void *arg)
 
 int main()
 {
-    int size = 20;
+    int size = 10;
     pthread_t threads[size];
 
-    /* Com o uso do join, garantimos que as threads serao executadas em ordem */
     for (int i = 0; i < size; i++)
     {
         pthread_create(&threads[i], NULL, &hello, NULL);
+    }
+
+    for (int i = 0; i < size; i++)
+    {
         pthread_join(threads[i], NULL);
     }
+
+    printf("Isso será executado após o loop do pthread_join().\n");
 
     pthread_exit(NULL);
 }

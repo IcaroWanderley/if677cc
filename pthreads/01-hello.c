@@ -18,7 +18,6 @@ int main()
     /* Declarando um array de threads */
     pthread_t threads[10];
 
-    /* Neste exemplo, nao eh garantido que as threads serao executadas em ordem (1 ao 10) */
     for (int i = 0; i < 10; i++)
     {
         /* Passamos a referencia para a thread no array de threads e tambem o nome da funcao
