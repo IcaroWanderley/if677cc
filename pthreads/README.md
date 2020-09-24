@@ -1,3 +1,11 @@
+### Referências
+[<pthread.h>](https://pubs.opengroup.org/onlinepubs/007908799/xsh/pthread.h.html)
+
+[POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
+
+[POSIX thread (pthread) libraries](https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)
+
+
 ### Compilação e execução
 1. Abra o terminal
 
