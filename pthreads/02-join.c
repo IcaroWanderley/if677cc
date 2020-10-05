@@ -27,5 +27,5 @@ int main()
 
     printf("Isso será executado após o loop do pthread_join().\n");
 
-    pthread_exit(NULL);
+    return 0;
 }

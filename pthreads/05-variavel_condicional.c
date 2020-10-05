@@ -53,5 +53,5 @@ int main()
 
     printf("[Thread main] encerrando...\n");
 
-    pthread_exit(NULL);
+    return 0;
 }

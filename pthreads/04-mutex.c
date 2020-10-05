@@ -46,5 +46,5 @@ int main()
     sleep(1);
     printf("Saldo após os saques: R$ %.2f\n", saldo);
 
-    pthread_exit(NULL);
+    return 0;
 }

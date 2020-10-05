@@ -25,5 +25,7 @@ int main()
         pthread_create(&threads[i], NULL, hello, NULL);
     }
 
+    /* necessário para garantirmos a execução de todas as threads, já que até esse momento não temos
+     * exemplo do pthread_join() */
     pthread_exit(NULL);
 }
