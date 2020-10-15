@@ -18,7 +18,7 @@ Pedro Caminha (phcl)
 
 ## Links úteis
 
-[Pasta da Disciplina](https://drive.google.com/drive/folders/0B2bPndKBxtb8fkdqVFpYU1k4cEloam9yVU5pak9TWmpCWGJfWWctVkwwT05Sd0lnNUJIZlE?usp=sharing)
+[Pasta da disciplina](https://drive.google.com/drive/folders/0B2bPndKBxtb8fkdqVFpYU1k4cEloam9yVU5pak9TWmpCWGJfWWctVkwwT05Sd0lnNUJIZlE?usp=sharing)
 
 [Aulas do professor](https://cin.ufpe.br/~cagf/if677/)
 

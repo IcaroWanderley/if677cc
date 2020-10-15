@@ -9,10 +9,10 @@ pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 void *debitar(void *arg)
 {
-    /* Usando o TRYLOCK, a thread em execucao acessara a regiao critica
+    /* Usando o LOCK, a thread em execucao acessara a regiao critica
      * e excluira outras de acessarem ate que ela seja finalizada. Ao final, sempre devemos
      * liberar a regiao com o UNLOCK */
-    while (pthread_mutex_trylock(&mutex));
+    pthread_mutex_lock(&mutex);
 
     sleep(1);
     if ((saldo - 400.00) > 0.00)

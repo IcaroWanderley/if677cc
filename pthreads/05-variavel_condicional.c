@@ -19,7 +19,7 @@ void *loops(void *arg)
     }
 
     /* Devemos utilizar mutex para garantir que uma thread por vez adquira os recursos */
-    while (pthread_mutex_trylock(&mutex));
+    pthread_mutex_trylock(&mutex);
     contador++;
     printf("[Threads] contador = %d. Sinalizando...\n", contador);
 
