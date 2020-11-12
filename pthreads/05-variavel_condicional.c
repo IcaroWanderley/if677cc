@@ -2,7 +2,7 @@
 #include <pthread.h>
 #include <unistd.h>
 
-/* Assim como mutex, variaveis condicionais podem ser declaradas estaticamente
+/* Assim como mutex, variáveis condicionais podem ser declaradas estaticamente
  * ou dinamicamente */
 int contador = 0;
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
@@ -19,12 +19,11 @@ void *loops(void *arg)
     }
 
     /* Devemos utilizar mutex para garantir que uma thread por vez adquira os recursos */
-    pthread_mutex_trylock(&mutex);
+    pthread_mutex_lock(&mutex);
     contador++;
     printf("[Threads] contador = %d. Sinalizando...\n", contador);
-
-    /* Sinalizamos para a thread que esta aguardando a condicao o status atual
-     * da nossa variavel condicional */
+    /* Sinalizamos para a thread que esta aguardando a condição o status atual
+     * da nossa variável condicional */
     pthread_cond_signal(&cond);
     pthread_mutex_unlock(&mutex);
 
@@ -43,15 +42,20 @@ int main()
         pthread_create(&threads[i], NULL, loops, NULL);
     }
 
-    /* Quando a thread main atingir a condicao PTHREAD_COND_WAIT, ela ficara em espera
-     * enquanto as threads da funcao nao sinalizarem atraves do PTHREAD_COND_SIGNAL */
+    /* Devemos garantir que apenas a thread main obtenha os recursos */
+    pthread_mutex_lock(&mutex);
+
+    /* Quando a thread main atingir a condição PTHREAD_COND_WAIT, ela ficará em espera
+     * enquanto as threads da função não sinalizarem através do PTHREAD_COND_SIGNAL */
     while (contador < NUMTHREADS)
     {
         pthread_cond_wait(&cond, &mutex);
-        printf("[Thread main] acordada. Condicao sinalizada.\n");
+        printf("[Thread main] acordada. Condição sinalizada.\n");
     }
 
     printf("[Thread main] encerrando...\n");
+
+    pthread_mutex_unlock(&mutex);
 
     return 0;
 }
