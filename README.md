@@ -16,7 +16,7 @@ Paulo Aragão (pvsa)
 
 Pedro Caminha (phcl)
 
-Pedro Arruda (phra)
+Pedro Ralph (phra)
 
 ## Links úteis
 
